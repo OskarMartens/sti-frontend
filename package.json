@@ -1,0 +1,19 @@
+{
+  "name": "sti-frontend",
+  "version": "1.0.0",
+  "description": "First frontend application",
+  "main": "app.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OskarMartens/sti-frontend.git"
+  },
+  "author": "Oskar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/OskarMartens/sti-frontend/issues"
+  },
+  "homepage": "https://github.com/OskarMartens/sti-frontend#readme"
+}
