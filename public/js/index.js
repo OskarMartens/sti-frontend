@@ -16,8 +16,8 @@ var removeButton = document.createElement('button');
     removeButton.onclick = removeElement;
     removeButton.style.margin = "8px";
 
-var aTable = document.createElement('table');
-    aTable.setAttribute("id", "tavolo")
+var aTable = document.createElement("table");
+    aTable.setAttribute("id", "unTavolo")
     aTable.style.width = '200px';
     aTable.style.height = '500px';
     /* aTable.setAttribute('border', '100'); */
