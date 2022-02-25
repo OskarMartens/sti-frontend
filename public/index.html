@@ -1,23 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width" />
-    <link rel="stylesheet" href="/css/index.css" />
-    <title>Document</title>
-  </head>
-  <body>
-    <h1>STI-Frontend</h1>
-    <div id="app"></div>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
 
-    <script src="/js/fotboll.js"></script>
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+
+    <!-- Local CSS -->
+    <link rel="stylesheet" href="\css\index.css" />
+
+    <title>Filmer Login</title>
+  </head>
+
+  <body class="text-center">
+    <main>
+      <form id="login-form">
+        <h3 class="mb-3" id="neon-text">Filmer</h3>
+        <input
+          type="text"
+          id="userName"
+          placeholder="Användarnamn"
+          class="form-control mb-3"
+        />
+        <input
+          type="password"
+          id="password"
+          placeholder="Lösenord"
+          class="form-control mb-3"
+        />
+        <button onclick="loginUser()">Logga in</button>
+        <button onclick="registerUser()">Registrera dig</button>
+      </form>
+    </main>
+    <script>
+      /js/login.js;
+    </script>
   </body>
 </html>
-
-<!-- <p id="paragraph">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet quam
-      impedit repellat cum placeat quos amet voluptas quasi omnis aliquam
-      inventore iusto laboriosam dolorum et, autem quas voluptatibus atque?
-      Harum!
-    </p> -->

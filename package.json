@@ -17,6 +17,7 @@
     "url": "https://github.com/OskarMartens/sti-frontend/issues"
   },
   "homepage": "https://github.com/OskarMartens/sti-frontend#readme",
+
   "dependencies": {
     "express": "^4.17.2",
     "healthcheck": "^0.1.3",
