@@ -8,25 +8,25 @@ function login(){
     const password = document.getElementById("password").value;
 
     const xhttp = new XMLHttpRequest();
-    xhttp.open("POST", "/sti-frontend/public/users.json" /* Länk till backend */)
-    xhttp.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+    xhttp.open("POST", "/public/users.json" /* Länk till backend */)
+    xhttp.setRequestHeader("Content-Type", "application/json;charset=UTF-8")
     xhttp.send(JSON.stringify({
         "username": username,
         "password": password
     }));
     xhttp.onreadystatechange = function() {
         if (this.readyState == 4) {
-            const objects = JSON.parse(this.responseText);
+            const objects = JSON.parse(this.responseText)
             console.log(objects);
             if (objects['status'] == 'ok') {
-                localStorage.setItem("jwt", objects['accessToken']);
-                Swal.fire({                             /*Swal används för att göra pop-up vid login  */
+                localStorage.setItem("jwt", objects['accessToken'])
+                Swal.fire({                             /* Swal används för att göra pop-up vid login */
                     text: objects['message'],
                     icon: 'success',
                     confirmButtonText: 'Okej!'
                 }).then((result) => {
                     if(result.isConfirmed) {
-                        window.location.href ='./index.js';
+                        window.location.href ='./index.js'
                     }
                 }); 
             } else {
